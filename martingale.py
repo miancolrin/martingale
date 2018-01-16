@@ -20,10 +20,10 @@
 # Creado por / Created by: @miancolrin
 
 def doblar(aDoblar):
-	return(aDoblar * 2)
+    return(aDoblar * 2)
 
 def sumar(doblado, total):
-	return(total + doblado)
+    return(total + doblado)
 
 inicial = input("Valor de la primera apuesta / first stake: ")
 n = input("¿Cuantas veces ha doblado? / How many times?: ")
@@ -32,10 +32,10 @@ total = 0
 doble = 0
 
 for x in range(n):
-	if x == 0:
-		total = sumar(inicial, 0)
-	else:
-		inicial = inicial * 2
-		total = sumar(total, inicial)
+    if x == 0:
+        total = sumar(inicial, 0)
+    else:
+        inicial = inicial * 2
+        total = sumar(total, inicial)
 		
 print "Valor de última apuesta / Last bet value: ", total
